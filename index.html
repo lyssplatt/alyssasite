@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Alyssa's Portfolio TEST TEST</title>
+    <title>Alyssa's Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <!-- Jquery -->
@@ -48,7 +48,7 @@
                         <img class="image-lyss" src="images/alyssa.png">
                     </div>
                     <div class="col-7 intro-text">
-                        <p class="hi fw-bold">Hi there!<p>
+                        <p class="hi fw-bold">Hi there! 👋<p>
                         <p class="fs-3">Fuelled by a passion for designing compelling digital media, I have a deep desire to excel and continuously improve in my work.  Learn more about me below!</p>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
             <div id="intro" class="d-flex justify-content-center center-info">
                 <div class="center-card introduction row align-items-center">
                     <div class="col about-me">
-                        <p class="hi fw-bold">About me<p>
+                        <p class="hi fw-bold">About me 😍</i><p>
                         <p class="fs-4">My name is Alyssa Platt, I’m from Kent Island, Maryland, and I am a digital marketing specialist! I graduated from the University of Maryland Global Campus in May 2020 with my Bachelor’s in Marketing and a minor in Digital Media and Web Technology. I am passionate about great digital designs, whether it be an email, newsletter, social media post, etc. I love to create beautiful designs that make the audience want to learn more. I try to incorporate fresh, new ideas while maintaining brand voice, themes, and values.</p>
                     </div>
                     <div class="col">
@@ -131,7 +131,7 @@
             <div id="portfolio" class="d-flex justify-content-center center-portfolio">
                 <div class="center-card row align-items-center">
                     <div class="">
-                        <p class="hi fw-bold">Portfolio</p>
+                        <p class="hi fw-bold">Portfolio 🎨</i></p>
                         <p class="fs-4">Please click on an image/video below to see the full resolution:</p>
                     </div>
                 </div>
@@ -164,24 +164,26 @@
         <div id="contact-form" class="d-flex justify-content-center center-portfolio">
             <div class="center-card row align-items-center">
                 <div class="">
-                    <p class="hi fw-bold">Contact</p>
+                    <p class="hi fw-bold">Contact 💜</i></p>
                     <p class="fs-4">Let’s work together! Contact me below to add some magic to your online presence.</p>
                 </div>
                 <div class="contact-form">
                     <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-                        <p>
-                            <label>Your Name: <input type="text" name="name" /></label>
-                        </p>
-                        <p>
-                            <label>Your Email: <input type="email" name="email" /></label>
-                        </p>
-                        <p>
-                            <label>Message: <textarea name="message" class="message-input"></textarea></label>
-                        </p>
-                        <div data-netlify-recaptcha="true"></div>
-                        <p>
-                            <button type="submit">Send</button>
-                        </p>
+                        <div class="row">
+                            <label class="contact-label">Full Name:</label><input type="text" name="name" placeholder="Your Name"/>
+                        </div>
+                        <div class="row">
+                            <label class="contact-label">Email Address:</label><input type="email" name="email" placeholder="youremail@email.com"/>
+                        </div>
+                        <div class="row">
+                            <label class="contact-label">Message:</label><textarea style="height:200px" name="message" class="message-input" placeholder="Message"></textarea>
+                        </div>
+                        <div class="row">
+                            <div data-netlify-recaptcha="true"></div>
+                        </div>
+                        <div class="row">
+                            <button class="submitButton" type="submit">Send <i class="fas fa-paper-plane"></i></button>
+                        </div>
                     </form>
                 </div>
             </div>
