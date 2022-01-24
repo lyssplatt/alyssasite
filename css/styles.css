@@ -1,4 +1,4 @@
-@media (max-width: 750px){
+@media (max-width: 1200px){
     .inner-body {
         width: 95% !important;
     }
@@ -9,7 +9,7 @@
         justify-items: center !important;
         text-align: center !important;
     }
-    
+
 }
 
 body {
