@@ -70,11 +70,10 @@ body {
     color: #d1b380 !important;
     font-size: xx-large !important;
     font-family: Belleza, sans-serif !important;
-
 }
 
 .hi {
-    font-size: xxx-large;
+    font-size: 3rem !important;
 }
 
 .portfolio-images {
