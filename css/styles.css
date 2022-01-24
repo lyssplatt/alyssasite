@@ -1,7 +1,26 @@
+@media (max-width: 750px){
+    .inner-body {
+        width: 95% !important;
+    }
+
+    .center-info {
+        display: flex !important;
+        justify-content: center !important;
+        justify-items: center !important;
+        text-align: center !important;
+    }
+    
+}
+
 body {
     background-image: linear-gradient(to right, #e5bdd4, #e1b9d4, #ddb4d5, #d7b1d7, #d1add8, #daacd3, #e2accd, #e8acc6, #f3b3b7, #f3beac, #eccbaa, #e0d8b2);
     font-family: Lato, sans-serif !important;
     user-select: none;
+}
+
+li a {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
 }
 
 .inner-body {
@@ -21,8 +40,15 @@ body {
 .image-lyss {
     max-width: 80%;
     border-radius: 20px;
+    min-width: 30% !important;
+}
+
+.image-lyss-shadow {
+    max-width: 80%;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-    min-width: 20%;
+    min-width: 30% !important;
+    border-radius: 20px;
+
 }
 
 .center-info {
@@ -38,7 +64,7 @@ body {
 }
 
 .skills {
-    padding-bottom: 170px;
+    padding-bottom: 50px;
 }
 
 .skills-images img {
@@ -70,6 +96,10 @@ body {
     color: #d1b380 !important;
     font-size: xx-large !important;
     font-family: Belleza, sans-serif !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    margin: 5px !important;
 }
 
 .hi {
@@ -177,6 +207,7 @@ body {
     border-color: #d0acd7 !important;
     color: #6d4c72 !important;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+    transition: all .25s ease-in;
 }
 
 .btn:hover {
@@ -239,6 +270,8 @@ input:focus, textarea:focus {
     margin: auto;
     font-size: x-large;
     text-align: center;
+    transition: all .25s ease-in;
+
 }
 
 .submitButton:hover {
