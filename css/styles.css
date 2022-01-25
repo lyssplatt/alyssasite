@@ -19,6 +19,12 @@
         font-size: 3rem !important;
     }
 
+    .navbar-brand {
+        min-height: 150px !important;
+        min-width: 150px !important;
+        font-size: 6.25rem !important;
+    }
+
     .fs-3{
         font-size: 10rem !important;
     }
@@ -44,6 +50,7 @@ body {
     background-image: linear-gradient(to right, #e5bdd4, #e1b9d4, #ddb4d5, #d7b1d7, #d1add8, #daacd3, #e2accd, #e8acc6, #f3b3b7, #f3beac, #eccbaa, #e0d8b2);
     font-family: Lato, sans-serif !important;
     user-select: none;
+    font-weight: 500 !important;
 }
 
 li a {
