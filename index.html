@@ -39,17 +39,17 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active btn btn-outline-dark btn-space" onclick="location.href='#intro'" role="button">About</a>
+                        <li class="nav-item" data-toggle="collapse" data-target=".nav-collapse">
+                            <a class="nav-link active btn btn-outline-dark btn-space" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="location.href='#intro'" role="button">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active btn btn-outline-dark btn-space" onclick="location.href='#portfolio'" role="button">Portfolio</a>
+                        <li class="nav-item" data-toggle="collapse" data-target=".nav-collapse">
+                            <a class="nav-link active btn btn-outline-dark btn-space" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="location.href='#imageCarousel'" role="button">Portfolio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active btn btn-outline-dark btn-space" onclick="location.href='#contact-form'" role="button">Contact</a>
+                        <li class="nav-item" data-toggle="collapse" data-target=".nav-collapse">
+                            <a class="nav-link active btn btn-outline-dark btn-space" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="location.href='#contact-form'" role="button">Contact</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active btn btn-outline-dark btn-space" href="https://www.linkedin.com/in/alyssa-platt/" target="_blank" role="button">LinkedIn</a>
+                        <li class="nav-item" data-toggle="collapse" data-target=".nav-collapse">
+                            <a class="nav-link active btn btn-outline-dark btn-space" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="https://www.linkedin.com/in/alyssa-platt/" target="_blank" role="button">LinkedIn</a>
                         </li>
                     </ul>
                 </div>
@@ -83,7 +83,7 @@
         <div class="d-flex justify-content-center center-info">
             <div class="center-card skills row align-items-center">
                 <div class="row skills-intro">
-                    <p class="fs-2 bold">My Skills <span class="emoji">⚒️</span><p>
+                    <p class="hi fw-bold">My Skills <span class="emoji">⚒️</span><p>
                     <p class="fs-3">I am proficient in the following technologies:</p>
                 </div>
                 <div class="row skills-image-container mx-auto d-block">
@@ -141,11 +141,11 @@
                 </div>
             </div>
         </div>
-        <div class="big-portfolio">
+        <div class="big-portfolio" >
             <div id="portfolio-images" class="d-flex justify-content-center center-portfolio">
                 <div class="center-card row align-items-center">
                     <div class="">
-                        <p class="hi fw-bold">Portfolio</p>
+                        <p class="hi fw-bold">Portfolio <span class="emoji">🎨️</span></p>
                         <p class="fs-4">Please click on an image/video below to see the full resolution:</p>
                     </div>
                 </div>
@@ -172,14 +172,14 @@
             </div>
         </div>
         <!-- Image carousel -->
-        <div id="" class="d-flex justify-content-center center-portfolio">
-            <div class="center-card row align-items-center">
-                <div class="">
-                    <p class="hi fw-bold" style="text-align: center">Portfolio</p>
+        <div class="image-carousel" id="image-carousel">
+            <div id="" class="d-flex justify-content-center center-portfolio">
+                <div class="center-card row align-items-center">
+                    <div class="">
+                        <p class="hi fw-bold" style="text-align: center">Portfolio <span class="emoji">🎨️</span></p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="image-carousel" id="image-carousel">
             <div id="imageCarousel" class="carousel slide carousel-fade carousel-interior" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
