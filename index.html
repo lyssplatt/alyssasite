@@ -43,7 +43,7 @@
                             <a class="nav-link active btn btn-outline-dark btn-space" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="location.href='#intro'" role="button">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active btn btn-outline-dark btn-space" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="location.href='#imageCarousel'" role="button">Portfolio</a>
+                            <a class="nav-link active btn btn-outline-dark btn-space" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="checkDivs()" role="button">Portfolio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active btn btn-outline-dark btn-space" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="location.href='#contact-form'" role="button">Contact</a>
@@ -141,7 +141,7 @@
                 </div>
             </div>
         </div>
-        <div class="big-portfolio" >
+        <div id="big-portfolio" class="big-portfolio">
             <div id="portfolio-images" class="d-flex justify-content-center center-portfolio">
                 <div class="center-card row align-items-center">
                     <div class="">
@@ -302,5 +302,18 @@
         }
     }
     window.addEventListener('load', setupVideos, false)
+
+    function checkDivs(){
+        if ($("#portfolio-images").is(":visible")){
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#portfolio-images").offset().top - 100
+            });
+        } else {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#image-carousel").offset().top - 500
+            });
+        }
+
+    }
 </script>
 </html>
