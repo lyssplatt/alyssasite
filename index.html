@@ -1,327 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Alyssa's Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <script src="scripts/script.js" type="module"></script>
     <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    <script src="scripts/script.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Lightbox -->
     <script src="scripts/lightbox.js"></script>
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Belleza:300,400,500,700&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700&display=swap" rel="stylesheet"/>
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Belleza:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="application-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-</head>
-<body>
-
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="application-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
     <div class="inner-body">
-        <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
-        <nav class="navbar sticky-top navbar-expand-xl navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="images/ap.png" width="80" height="80" class="navbar-brand ps-2">Alyssa Platt</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active btn btn-outline-dark btn-space" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="location.href='#intro'" role="button">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active btn btn-outline-dark btn-space" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="checkDivs()" role="button">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active btn btn-outline-dark btn-space" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="location.href='#contact-form'" role="button">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active btn btn-outline-dark btn-space" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="https://www.linkedin.com/in/alyssa-platt/" target="_blank" role="button">LinkedIn</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-            <div class="d-flex justify-content-center center-info">
-                <div class="center-card row align-items-center">
-                    <div class="col image-lyss">
-                        <img class="image-lyss-shadow" src="images/alyssa.png">
-                    </div>
-                    <div class="col intro-text">
-                        <p class="hi fw-bold">Hi there! <span class="emoji">👋</span><p>
-                        <p class="fs-3">Fuelled by a passion for designing compelling digital media, I have a deep desire to excel and continuously improve in my work.  Learn more about me below!</p>
-                    </div>
-                </div>
-            </div>
-            <div id="intro" class="d-flex justify-content-center center-info">
-                <div class="center-card introduction row align-items-center">
-                    <div class="row about-me">
-                        <p class="hi fw-bold">About me <span class="emoji">😍</span><p>
-                        <p class="fs-3">My name is Alyssa Platt, I’m from Kent Island, Maryland, and I am a digital marketing specialist! I graduated from the University of Maryland Global Campus in May 2020 with my Bachelor’s in Marketing and a minor in Digital Media and Web Technology. I am passionate about great digital designs, whether it be an email, newsletter, social media post, etc. I love to create beautiful designs that make the audience want to learn more. I try to incorporate fresh, new ideas while maintaining brand voice, themes, and values.</p>
-                    </div>
-                    <div class="row">
-                        <div class="row about-images mx-auto d-block text-center">
-                            <a href="images/nicklyss.png" data-lightbox="aboutme" data-title="10 - 1 - 2020"><img class="img-fluid" src="images/nicklyss.png" alt="art"></a>
-                            <a href="images/yosemite.jpg" data-lightbox="aboutme" data-title="Yosemite!"><img class="img-fluid" src="images/yosemite.jpg" alt="art"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <div class="d-flex justify-content-center center-info">
-            <div class="center-card skills row align-items-center">
-                <div class="row skills-intro">
-                    <p class="hi fw-bold">My Skills <span class="emoji">⚒️</span><p>
-                    <p class="fs-3">I am proficient in the following technologies:</p>
-                </div>
-                <div class="row skills-image-container mx-auto d-block">
-                    <div class="row skills-images">
-                        <div class="col image-container"><img class="image" src="images/skills/canva.png" alt="skills - canva">
-                            <div class="middle">
-                            <div class="text">Canva</div>
-                        </div></div>
-                        <div class="col image-container"><img class="image" src="images/skills/mailchimp.png" alt="skills - mailchimp">
-                            <div class="middle">
-                            <div class="text">Mailchimp</div>
-                        </div></div>
-                        <div class="col image-container"><img class="image" src="images/skills/wordpress.png" alt="skills - wordpress">
-                            <div class="middle">
-                            <div class="text">Wordpress</div>
-                        </div></div>
-                        <div class="col image-container"><img class="image" src="images/skills/illustrator.png" alt="skills - adobe illustrator">
-                            <div class="middle">
-                            <div class="text">Adobe<br> Illustrator</div>
-                        </div></div>
-                        <div class="col image-container"><img class="image" src="images/skills/indesign.png" alt="skills - adobe indesign">
-                            <div class="middle">
-                            <div class="text">Adobe<br> Indesign</div>
-                        </div></div>
-                        <div class="col image-container"><img class="image" src="images/skills/photoshop.png" alt="skills - adobe photoshop">
-                            <div class="middle">
-                            <div class="text">Adobe<br> Photoshop</div>
-                        </div></div>
-                        <div class="col image-container"><img class="image" src="images/skills/davinci.png" alt="skills - davinci resolve">
-                            <div class="middle">
-                            <div class="text">Davinci<br> Resolve</div>
-                        </div></div>
-                        <div class="col image-container"><img class="image" src="images/skills/surveymonkey.png" alt="skills - surveymonkey">
-                            <div class="middle">
-                            <div class="text">Survey<br> Monkey</div>
-                        </div>
-                        </div>
-                        <div class="col image-container"><img class="image" src="images/skills/hootsuite.png" alt="skills - hootsuite">
-                            <div class="middle">
-                            <div class="text">Hootsuite</div>
-                        </div></div>
-                        <div class="col image-container"><img class="image" src="images/skills/linkedin.png" alt="skills - LinkedIn">
-                            <div class="middle">
-                                <div class="text">LinkedIn</div>
-                            </div></div>
-                        <div class="col image-container"><img class="image" src="images/skills/wix.png" alt="skills - wix">
-                            <div class="middle">
-                                <div class="text">Wix</div>
-                            </div></div>
-                        <div class="col image-container"><img class="image" src="images/skills/fb.png" alt="skills - facebook">
-                            <div class="middle">
-                            <div class="text">Facebook</div>
-                        </div></div>
-                        <div class="col image-container"><img class="image" src="images/skills/insta.png" alt="skills - instagram">
-                            <div class="middle">
-                            <div class="text">Instagram</div>
-                        </div></div>
-                        <div class="col image-container"><img class="image" src="images/skills/twitter.png" alt="skills - twitter">
-                            <div class="middle">
-                            <div class="text">Twitter</div>
-                        </div></div>
-                    </div>
-                </div>
-            </div>
+      <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+      <nav class="navbar sticky-top navbar-expand-xl navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/ap.png" width="80" height="80" class="navbar-brand ps-2" />Alyssa Platt</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active btn btn-outline-dark btn-space" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="location.href='#intro'" role="button">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active btn btn-outline-dark btn-space" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="checkDivs()" role="button">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active btn btn-outline-dark btn-space" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="location.href='#contact-form'" role="button">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active btn btn-outline-dark btn-space" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onclick="window.open('https://www.linkedin.com/in/alyssa-platt/', '_blank');" role="button">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div id="big-portfolio" class="big-portfolio">
-            <div id="portfolio-images" class="d-flex justify-content-center center-portfolio">
-                <div class="center-card row align-items-center">
-                    <div class="">
-                        <p class="hi fw-bold">Portfolio <span class="emoji">🎨️</span></p>
-                        <p class="fs-4">Please click on an image/video below to see the full resolution:</p>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex center-images  mx-auto d-block">
-                <div class="center-card row align-items-center">
-                    <div class="row portfolio-images">
-                        <div class="col-sm"><a href="images/portfolio/Beige%20Minimalist%20Cafe%20Instagram%20Post.png" data-lightbox="portfolio" data-title="Chi Dog - 1"><img src="images/portfolio/Beige%20Minimalist%20Cafe%20Instagram%20Post.png" alt="art"></a></div>
-                        <div class="col-sm"><a href="images/portfolio/Blue%20Modern%20Real%20Estate%20Property%20Promotion%20Instagram%20Post.png" data-lightbox="portfolio" data-title="Chi Dog - 2"><img src="images/portfolio/Blue%20Modern%20Real%20Estate%20Property%20Promotion%20Instagram%20Post.png" alt="art"></a></div>
-                        <div class="col-sm"><a href="images/portfolio/Chi%20Dog%20Story.png" data-lightbox="portfolio" data-title="Chi Dog - 3"><img src="images/portfolio/Chi%20Dog%20Story.png" alt="art"></a></div>
-                        <div class="col-sm"><a href="images/portfolio/Water%20Diet.png" data-lightbox="portfolio" data-title="Chi Dog - 4"><img src="images/portfolio/Water%20Diet.png" alt="art"></a></div>
-                        <div class="col-sm"><a href="images/portfolio/New%20Arrival%20Product%20Instagram%20Post.png" data-lightbox="portfolio" data-title="Chi Dog - 5"><img src="images/portfolio/New%20Arrival%20Product%20Instagram%20Post.png" alt="art"></a></div>
-                        <div class="col-sm"><a href="images/portfolio/glass.png" data-lightbox="portfolio" data-title="Glass"><img src="images/portfolio/glass.png" alt="art"></a></div>
-                        <div class="col-sm"><a href="images/portfolio/bong-ad.png" data-lightbox="portfolio" data-title="Glass - 2"><img src="images/portfolio/bong-ad.png" alt="art"></a></div>
-                        <div class="col-sm"><a href="images/portfolio/labarge2.png" data-lightbox="portfolio" data-title="LaBarge - 1"><img src="images/portfolio/labarge2.png" alt="art"></a></div>
-                        <div class="col-sm"><a href="images/portfolio/labarge3.png" data-lightbox="portfolio" data-title="LaBarge - 2"><img src="images/portfolio/labarge3.png" alt="art"></a></div>
-                        <div class="col-sm"><a href="images/portfolio/labarge1.png" data-lightbox="portfolio" data-title="LaBarge - 3"><img src="images/portfolio/labarge1.png" alt="art"></a></div>
-                        <div class="col-sm"><a href="images/portfolio/stress-card.jpg" data-lightbox="portfolio" data-title="LaBarge - 4"><img src="images/portfolio/stress-card.jpg" alt="art"></a></div>
-                        <div class="col-sm"><a href="images/portfolio/newspaper.jpg" data-lightbox="portfolio" data-title="LaBarge - 5"><img src="images/portfolio/newspaper.jpg" alt="art"></a></div>
-                        <div class="col-sm"><a href="images/portfolio/tower1.PNG" data-lightbox="portfolio" data-title="Tower - 1"><img src="images/portfolio/tower1.PNG" alt="art"></a></div>
-                        <div class="col-sm"><a href="images/portfolio/tower2.PNG" data-lightbox="portfolio" data-title="Tower - 2"><img src="images/portfolio/tower2.PNG" alt="art"></a></div>
-                    </div>
-                </div>
-            </div>
+      </nav>
+      <div class="d-flex justify-content-center center-info">
+        <div class="center-card row align-items-center">
+          <div class="col image-lyss">
+            <img class="image-lyss-shadow" src="images/alyssa.png" />
+          </div>
+          <div class="col intro-text">
+            <p class="hi fw-bold">Hi there! <span class="emoji">👋</span></p>
+            <p></p>
+            <p class="fs-3">Fuelled by a passion for designing compelling digital media, I have a deep desire to excel and continuously improve in my work. Learn more about me below!</p>
+          </div>
         </div>
-        <!-- Image carousel -->
-        <div class="image-carousel" id="image-carousel">
-            <div id="" class="d-flex justify-content-center center-portfolio">
-                <div class="center-card row align-items-center">
-                    <div class="">
-                        <p class="hi fw-bold" style="text-align: center">Portfolio <span class="emoji">🎨️</span></p>
-                    </div>
-                </div>
+      </div>
+      <div id="intro" class="d-flex justify-content-center center-info">
+        <div class="center-card introduction row align-items-center">
+          <div class="row about-me">
+            <p class="hi fw-bold">About me <span class="emoji">😍</span></p>
+            <p></p>
+            <p class="fs-3">
+              My name is Alyssa Platt, I’m from Kent Island, Maryland, and I am a digital marketing specialist! I graduated from the University of Maryland Global Campus in May 2020 with my Bachelor’s in Marketing and a minor in Digital Media and Web Technology. I am passionate about great digital
+              designs, whether it be an email, newsletter, social media post, etc. I love to create beautiful designs that make the audience want to learn more. I try to incorporate fresh, new ideas while maintaining brand voice, themes, and values.
+            </p>
+          </div>
+          <div class="row">
+            <div class="row about-images mx-auto d-block text-center">
+              <a href="images/nicklyss.png" data-lightbox="aboutme" data-title="10 - 1 - 2020"><img class="img-fluid" src="images/nicklyss.png" alt="art" /></a>
+              <a href="images/yosemite.jpg" data-lightbox="aboutme" data-title="Yosemite!"><img class="img-fluid" src="images/yosemite.jpg" alt="art" /></a>
             </div>
-            <div id="imageCarousel" class="carousel slide carousel-fade carousel-interior" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/portfolio/Beige%20Minimalist%20Cafe%20Instagram%20Post.png" class="d-block w-100" alt="Chi-dog 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/portfolio/Blue%20Modern%20Real%20Estate%20Property%20Promotion%20Instagram%20Post.png" class="d-block w-100" alt="Chi-dog 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/portfolio/Chi%20Dog%20Story.png" class="d-block w-100" alt="Chi-dog 3">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/portfolio/Water%20Diet.png" class="d-block w-100" alt="Chi-dog 4">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/portfolio/New%20Arrival%20Product%20Instagram%20Post.png" class="d-block w-100" alt="Chi-dog 5">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/portfolio/glass.png" class="d-block w-100" alt="Glass 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/portfolio/bong-ad.png" class="d-block w-100" alt="Glass 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/portfolio/labarge2.png" class="d-block w-100" alt="labarge 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/portfolio/labarge3.png" class="d-block w-100" alt="labarge 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/portfolio/labarge1.png" class="d-block w-100" alt="labarge 3">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/portfolio/stress-card.jpg" class="d-block w-100" alt="labarge 4">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/portfolio/newspaper.jpg" class="d-block w-100" alt="labarge 5">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/portfolio/tower1.PNG" class="d-block w-100" alt="tower 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/portfolio/tower2.PNG" class="d-block w-100" alt="tower 2">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+          </div>
         </div>
-        <div class="d-flex center-images">
-            <div class="center-card row align-items-center">
-                <div class="row portfolio-images">
-                    <video class="col-md" width="400" height="400" style="padding-bottom: 25px" autoplay>
-                        <source src="images/portfolio/chi%20dog%20fire%20diet.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <video class="col-md" width="400" height="400" autoplay>
-                        <source src="images/portfolio/Chi%20Dog%20Video%20Post%20(1).mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+      </div>
+      <div class="d-flex justify-content-center center-info">
+        <div class="center-card skills row align-items-center">
+          <div class="row skills-intro">
+            <p class="hi fw-bold">My Skills <span class="emoji">⚒️</span></p>
+            <p></p>
+            <p class="fs-3">I am proficient in the following technologies:</p>
+          </div>
+          <div class="row skills-image-container mx-auto d-block">
+            <div class="row skills-images">
+              <div class="col image-container">
+                <img class="image" src="images/skills/canva.png" alt="skills - canva" />
+                <div class="middle">
+                  <div class="text">Canva</div>
                 </div>
+              </div>
+              <div class="col image-container">
+                <img class="image" src="images/skills/mailchimp.png" alt="skills - mailchimp" />
+                <div class="middle">
+                  <div class="text">Mailchimp</div>
+                </div>
+              </div>
+              <div class="col image-container">
+                <img class="image" src="images/skills/wordpress.png" alt="skills - wordpress" />
+                <div class="middle">
+                  <div class="text">Wordpress</div>
+                </div>
+              </div>
+              <div class="col image-container">
+                <img class="image" src="images/skills/illustrator.png" alt="skills - adobe illustrator" />
+                <div class="middle">
+                  <div class="text">
+                    Adobe<br />
+                    Illustrator
+                  </div>
+                </div>
+              </div>
+              <div class="col image-container">
+                <img class="image" src="images/skills/indesign.png" alt="skills - adobe indesign" />
+                <div class="middle">
+                  <div class="text">
+                    Adobe<br />
+                    Indesign
+                  </div>
+                </div>
+              </div>
+              <div class="col image-container">
+                <img class="image" src="images/skills/photoshop.png" alt="skills - adobe photoshop" />
+                <div class="middle">
+                  <div class="text">
+                    Adobe<br />
+                    Photoshop
+                  </div>
+                </div>
+              </div>
+              <div class="col image-container">
+                <img class="image" src="images/skills/davinci.png" alt="skills - davinci resolve" />
+                <div class="middle">
+                  <div class="text">
+                    Davinci<br />
+                    Resolve
+                  </div>
+                </div>
+              </div>
+              <div class="col image-container">
+                <img class="image" src="images/skills/surveymonkey.png" alt="skills - surveymonkey" />
+                <div class="middle">
+                  <div class="text">
+                    Survey<br />
+                    Monkey
+                  </div>
+                </div>
+              </div>
+              <div class="col image-container">
+                <img class="image" src="images/skills/hootsuite.png" alt="skills - hootsuite" />
+                <div class="middle">
+                  <div class="text">Hootsuite</div>
+                </div>
+              </div>
+              <div class="col image-container">
+                <img class="image" src="images/skills/linkedin.png" alt="skills - LinkedIn" />
+                <div class="middle">
+                  <div class="text">LinkedIn</div>
+                </div>
+              </div>
+              <div class="col image-container">
+                <img class="image" src="images/skills/wix.png" alt="skills - wix" />
+                <div class="middle">
+                  <div class="text">Wix</div>
+                </div>
+              </div>
+              <div class="col image-container">
+                <img class="image" src="images/skills/fb.png" alt="skills - facebook" />
+                <div class="middle">
+                  <div class="text">Facebook</div>
+                </div>
+              </div>
+              <div class="col image-container">
+                <img class="image" src="images/skills/insta.png" alt="skills - instagram" />
+                <div class="middle">
+                  <div class="text">Instagram</div>
+                </div>
+              </div>
+              <div class="col image-container">
+                <img class="image" src="images/skills/twitter.png" alt="skills - twitter" />
+                <div class="middle">
+                  <div class="text">Twitter</div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div id="contact-form" class="d-flex justify-content-center center-portfolio">
-            <div class="center-card row align-items-center">
-                <div class="">
-                    <p class="hi fw-bold">Contact <span class="emoji">💜</span></p>
-                    <p class="fs-4">Let’s work together! Contact me below to add some magic to your online presence.</p>
-                </div>
-                <div class="contact-form">
-                    <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-                        <div class="row">
-                            <label class="contact-label">Full Name:</label><input type="text" name="name" placeholder="Your Name"/>
-                        </div>
-                        <div class="row">
-                            <label class="contact-label">Email Address:</label><input type="email" name="email" placeholder="youremail@email.com"/>
-                        </div>
-                        <div class="row">
-                            <label class="contact-label">Message:</label><textarea style="height:200px" name="message" class="message-input" placeholder="Message"></textarea>
-                        </div>
-                        <div class="row">
-                            <div data-netlify-recaptcha="true"></div>
-                        </div>
-                        <div class="row">
-                            <button class="submitButton" type="submit">Send <i class="fas fa-paper-plane"></i></button>
-                        </div>
-                    </form>
-                </div>
+      </div>
+      <div id="big-portfolio" class="big-portfolio">
+        <div id="portfolio-images" class="d-flex justify-content-center center-portfolio">
+          <div class="center-card row align-items-center">
+            <div class="">
+              <p class="hi fw-bold">Portfolio <span class="emoji">🎨️</span></p>
+              <p class="fs-4">Please click on an image/video below to see the full resolution:</p>
             </div>
+          </div>
         </div>
-        <div class="bottom-padding"></div>
+        <div class="d-flex center-images mx-auto d-block">
+          <div class="center-card row align-items-center">
+            <div class="row portfolio-images">
+              <div class="col-sm">
+                <a href="images/portfolio/Beige%20Minimalist%20Cafe%20Instagram%20Post.png" data-lightbox="portfolio" data-title="Chi Dog - 1"><img src="images/portfolio/Beige%20Minimalist%20Cafe%20Instagram%20Post.png" alt="art" /></a>
+              </div>
+              <div class="col-sm">
+                <a href="images/portfolio/Blue%20Modern%20Real%20Estate%20Property%20Promotion%20Instagram%20Post.png" data-lightbox="portfolio" data-title="Chi Dog - 2"><img src="images/portfolio/Blue%20Modern%20Real%20Estate%20Property%20Promotion%20Instagram%20Post.png" alt="art" /></a>
+              </div>
+              <div class="col-sm">
+                <a href="images/portfolio/Chi%20Dog%20Story.png" data-lightbox="portfolio" data-title="Chi Dog - 3"><img src="images/portfolio/Chi%20Dog%20Story.png" alt="art" /></a>
+              </div>
+              <div class="col-sm">
+                <a href="images/portfolio/Water%20Diet.png" data-lightbox="portfolio" data-title="Chi Dog - 4"><img src="images/portfolio/Water%20Diet.png" alt="art" /></a>
+              </div>
+              <div class="col-sm">
+                <a href="images/portfolio/New%20Arrival%20Product%20Instagram%20Post.png" data-lightbox="portfolio" data-title="Chi Dog - 5"><img src="images/portfolio/New%20Arrival%20Product%20Instagram%20Post.png" alt="art" /></a>
+              </div>
+              <div class="col-sm">
+                <a href="images/portfolio/glass.png" data-lightbox="portfolio" data-title="Glass"><img src="images/portfolio/glass.png" alt="art" /></a>
+              </div>
+              <div class="col-sm">
+                <a href="images/portfolio/bong-ad.png" data-lightbox="portfolio" data-title="Glass - 2"><img src="images/portfolio/bong-ad.png" alt="art" /></a>
+              </div>
+              <div class="col-sm">
+                <a href="images/portfolio/labarge4.png" data-lightbox="portfolio" data-title="LaBarge - 2"><img src="images/portfolio/labarge4.png" alt="art" /></a>
+              </div>
+              <div class="col-sm">
+                <a href="images/portfolio/labarge5.png" data-lightbox="portfolio" data-title="LaBarge - 3"><img src="images/portfolio/labarge5.png" alt="art" /></a>
+              </div>
+              <div class="col-sm">
+                <a href="images/portfolio/stress-card.jpg" data-lightbox="portfolio" data-title="LaBarge - 4"><img src="images/portfolio/stress-card.jpg" alt="art" /></a>
+              </div>
+              <div class="col-sm">
+                <a href="images/portfolio/newspaper.jpg" data-lightbox="portfolio" data-title="LaBarge - 5"><img src="images/portfolio/newspaper.jpg" alt="art" /></a>
+              </div>
+              <div class="col-sm">
+                <a href="images/portfolio/tower1.PNG" data-lightbox="portfolio" data-title="Tower - 1"><img src="images/portfolio/tower1.PNG" alt="art" /></a>
+              </div>
+              <div class="col-sm">
+                <a href="images/portfolio/tower2.PNG" data-lightbox="portfolio" data-title="Tower - 2"><img src="images/portfolio/tower2.PNG" alt="art" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Image carousel -->
+      <div class="image-carousel" id="image-carousel">
+        <div id="" class="d-flex justify-content-center center-portfolio">
+          <div class="center-card row align-items-center">
+            <div class="">
+              <p class="hi fw-bold" style="text-align: center">Portfolio <span class="emoji">🎨️</span></p>
+            </div>
+          </div>
+        </div>
+        <div id="imageCarousel" class="carousel slide carousel-fade carousel-interior" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/portfolio/Beige%20Minimalist%20Cafe%20Instagram%20Post.png" class="d-block w-100" alt="Chi-dog 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/portfolio/Blue%20Modern%20Real%20Estate%20Property%20Promotion%20Instagram%20Post.png" class="d-block w-100" alt="Chi-dog 2" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/portfolio/Chi%20Dog%20Story.png" class="d-block w-100" alt="Chi-dog 3" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/portfolio/Water%20Diet.png" class="d-block w-100" alt="Chi-dog 4" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/portfolio/New%20Arrival%20Product%20Instagram%20Post.png" class="d-block w-100" alt="Chi-dog 5" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/portfolio/glass.png" class="d-block w-100" alt="Glass 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/portfolio/bong-ad.png" class="d-block w-100" alt="Glass 2" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/portfolio/labarge4.png" class="d-block w-100" alt="labarge 4" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/portfolio/labarge5.png" class="d-block w-100" alt="labarge 5" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/portfolio/stress-card.jpg" class="d-block w-100" alt="labarge 4" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/portfolio/newspaper.jpg" class="d-block w-100" alt="labarge 5" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/portfolio/tower1.PNG" class="d-block w-100" alt="tower 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/portfolio/tower2.PNG" class="d-block w-100" alt="tower 2" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="d-flex center-images">
+        <div class="center-card row align-items-center">
+          <div class="row portfolio-images">
+            <video class="col-md" width="400" height="400" style="padding-bottom: 25px" autoplay>
+              <source src="images/portfolio/chi%20dog%20fire%20diet.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video class="col-md" width="400" height="400" autoplay>
+              <source src="images/portfolio/Chi%20Dog%20Video%20Post%20(1).mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+      <div id="contact-form" class="d-flex justify-content-center center-portfolio">
+        <div class="center-card row align-items-center">
+          <div class="">
+            <p class="hi fw-bold">Contact <span class="emoji">💜</span></p>
+            <p class="fs-4">Let’s work together! Contact me below to add some magic to your online presence.</p>
+          </div>
+          <div class="contact-form">
+            <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+              <div class="row"><label class="contact-label">Full Name:</label><input type="text" name="name" placeholder="Your Name" /></div>
+              <div class="row"><label class="contact-label">Email Address:</label><input type="email" name="email" placeholder="youremail@email.com" /></div>
+              <div class="row"><label class="contact-label">Message:</label><textarea style="height: 200px" name="message" class="message-input" placeholder="Message"></textarea></div>
+              <div class="row">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
+              <div class="row">
+                <button class="submitButton" type="submit">Send <i class="fas fa-paper-plane"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-padding"></div>
     </div>
-</body>
-<script>
-    const body = document.getElementsByTagName("body")[0];// Initialize resize observer object
-    let resizeObserver = new ResizeObserver(() => {
-
-        if (window.innerWidth < 1200) {
-            $(".big-portfolio").css("display","none");
-            $(".image-carousel").css("display","block");
-        } else {
-            $(".big-portfolio").css("display","block");
-            $(".image-carousel").css("display","none");
-        }
-    });
-    // Add a listener to body
-    resizeObserver.observe(body);
-
-    function setupVideos() {
-        for (const video of document.querySelectorAll('video')) {
-            video.controls = false
-            video.addEventListener('mouseover', () => { video.controls = 'controls' })
-            video.addEventListener('mouseout', () => { video.controls = false })
-        }
-    }
-    window.addEventListener('load', setupVideos, false)
-
-    function checkDivs(){
-        if ($("#portfolio-images").is(":visible")){
-            $([document.documentElement, document.body]).animate({
-                scrollTop: $("#portfolio-images").offset().top - 100
-            });
-        } else {
-            $([document.documentElement, document.body]).animate({
-                scrollTop: $("#image-carousel").offset().top - 500
-            });
-        }
-
-    }
-</script>
+  </body>
 </html>
