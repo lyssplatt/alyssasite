@@ -102,7 +102,7 @@ li a {
 }
 
 .skills-images img {
-  width: 100%;
+  width: 120px;
   min-width: 120px;
   max-width: 120px;
   display: block;
@@ -151,6 +151,19 @@ li a {
   margin-right: auto;
   margin-bottom: 30px;
 }
+
+.portfolio-images video {
+  padding-bottom: 25px;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.portfolio-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .about-images img {
   width: 100%;
